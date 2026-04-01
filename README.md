@@ -14,9 +14,8 @@ Repository ini berisi implementasi alat audit keamanan nirkabel berbasis ESP32 (
 
 | **C&C Admin Panel (Scanner)** | **Target View (Captive Portal)** |
 |:---:|:---:|
-| <img src="images/admin_scanner.jpeg" width="400" alt="Admin Panel"> | <img src="images/mikrotik_portal.jpeg" width="400" alt="MikroTik Portal"> |
-| *Panel kontrol untuk memindai dan memilih target WiFi secara dinamis.* | *Tampilan portal MikroTik untuk validasi kredenisial pengguna.* |
-
+| <img src="admin_scanner.jpeg" height="230"> | <img src="mikrotik_portal.jpeg" height="230"> |
+| *Panel kontrol untuk memindai WiFi secara real-time.* | *Tampilan login MikroTik untuk validasi kredenisial.* |
 ---
 
 ## 🔥 Fitur Utama
