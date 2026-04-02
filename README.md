@@ -30,15 +30,18 @@ Repository ini berisi implementasi alat audit keamanan nirkabel berbasis ESP32 (
 
 ---
 
-## 🛠️ Persyaratan Sistem
+🛠️ Alur Kerja (Proof of Concept)
+Untuk memahami bagaimana alat ini bekerja, berikut adalah tahapannya:
 
-### 1. Hardware
-* **Microcontroller**: ESP32 WROOM-32U (Disarankan menggunakan antena eksternal).
+Scanning: ESP32 memindai semua jaringan WiFi yang aktif di sekitar.
 
-### 2. Software & Library
-* Arduino IDE (ESP32 Core installed).
-* Library bawaan: `WiFi`, `DNSServer`, `WebServer`, `esp_wifi`.
+Selection: Melalui Panel Admin, pengguna memilih target SSID untuk dikloning.
 
+Deauthentication: Alat mengirim paket deauth untuk memutuskan koneksi klien dari router asli.
+
+Evil Twin & Captive Portal: ESP32 membuat akses poin palsu dengan nama yang sama. Saat target terhubung, portal login MikroTik akan muncul secara otomatis (Captive Portal).
+
+Validation: Password yang dimasukkan target akan langsung diverifikasi ke router asli secara real-time sebelum dianggap valid.
 ---
 
 ## 🚀 Panduan Setup & Penggunaan
